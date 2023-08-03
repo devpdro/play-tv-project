@@ -1,15 +1,9 @@
 import React from "react";
 
-const style = {
-  maxWidth: "1280px",
-  margin: "0 auto",
-};
-
-function TvShows({ img, caption, type }) {
+function TvShows({ img, caption }) {
   return (
-    <section style={style}>
+    <section>
       <img src={img} alt={caption} />
-      ola
     </section>
   );
 }
