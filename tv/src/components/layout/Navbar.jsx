@@ -1,12 +1,12 @@
-import { Nav } from "./StyledNavbar";
+import { Container, Screen } from "./StyledNavbar";
 
 function Navbar() {
   return (
-    <Nav>
-      <div>
+    <Container>
+      <Screen>
         <h1>StreamVision TV</h1>
-      </div>
-    </Nav>
+      </Screen>
+    </Container>
   );
 }
 
