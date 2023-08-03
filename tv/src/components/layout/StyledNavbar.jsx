@@ -15,4 +15,3 @@ export const Screen = styled.header`
     font-size: 1.4rem;
   }
 `;
-
