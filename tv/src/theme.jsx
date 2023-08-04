@@ -7,6 +7,7 @@ export const theme = {
   },
   size: {},
   width: {
-    max: "1280px",
+    maxShow: "1580px",
+    maxApp: "1280px",
   },
 };

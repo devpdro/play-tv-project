@@ -1,27 +1,23 @@
 import React, { useState } from "react";
-import Teste from "../assets/apps/music logo.png";
-import Teste2 from "../assets/apps/movies logo.jpg";
-import Teste3 from "../assets/apps/tv logo.jpg";
-import Teste4 from "../assets/apps/photos logo.jpg";
-import Teste5 from "../assets/apps/app-store-logo.png";
 
-const screen = {
-  maxWidth: "1280px",
-  margin: "5rem auto",
-};
+import { Screen, Container, Img, BoxImg } from "./StyledApps";
 
-const container = {
-  gap: "30px",
+import PrimeVideo from "../assets/apps/prime video logo.png";
+import Movies from "../assets/apps/movies logo.jpg";
+import Store from "../assets/apps/app-store-logo.png";
+import Music from "../assets/apps/music logo.png";
+import Photos from "../assets/apps/photos logo.jpg";
+
+const ImgStyle = {
   display: "flex",
+  justifyContent: "center",
+  width: "262px",
+  height: "140px",
+  boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+  cursor: "pointer",
 };
 
-const imgStyle = {
-  width: "250px",
-  height: "170px",
-  cursor: "pointer", 
-};
-
-function Apps({ shows, songs }) {
+function Apps({ shows, songs, movies, stores }) {
   const [selectedShow, setSelectedShow] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -31,114 +27,106 @@ function Apps({ shows, songs }) {
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
-    setSelectedShow(null); 
+    setSelectedShow(null);
   };
 
   return (
-    <section style={screen}>
-      <div style={container}>
+    <Screen>
+      <Container>
         <img
-          onClick={() => handleCategoryClick("tv")}
-          style={imgStyle}
-          src={Teste3}
-          alt=""
-        />
-        <img
-          onClick={() => handleCategoryClick("photos")}
-          style={imgStyle}
-          src={Teste4}
-          alt=""
-        />
-        <img
-          onClick={() => handleCategoryClick("store")}
-          style={imgStyle}
-          src={Teste5}
-          alt=""
+          onClick={() => handleCategoryClick("prime")}
+          style={ImgStyle}
+          src={PrimeVideo}
+          caption={"Prime"}
+          alt="Prime Video"
         />
         <img
           onClick={() => handleCategoryClick("movies")}
-          style={imgStyle}
-          src={Teste2}
-          alt=""
+          style={ImgStyle}
+          src={Movies}
+          caption={"Movies"}
+          alt="Filmes"
+        />
+        <img
+          onClick={() => handleCategoryClick("store")}
+          style={ImgStyle}
+          src={Store}
+          caption={"Store"}
+          alt="Compras"
         />
         <img
           onClick={() => handleCategoryClick("music")}
-          style={imgStyle}
-          src={Teste}
-          alt=""
+          style={ImgStyle}
+          src={Music}
+          caption={"Music"}
+          alt="Musicas"
         />
-        {selectedShow ? (
-          <div>
-            <h1>{selectedShow.caption}</h1>
-          </div>
-        ) : null}
-      </div>
-      {selectedCategory === "movies" && (
-        <div style={container}>
+        <img
+          onClick={() => handleCategoryClick("photos")}
+          style={ImgStyle}
+          src={Photos}
+          caption={"Photos"}
+          alt="Fotos"
+        />
+
+        {selectedShow ? <div></div> : null}
+      </Container>
+      {selectedCategory === "prime" && (
+        <Container>
           {shows.map((show) => (
-            <div
-              key={show.id}
-              caption={show.caption}
-              onClick={() => handleShowClick(show)}
-            >
-              <img style={imgStyle} src={show.img} alt="" />
+            <div key={show.id} onClick={() => handleShowClick(show)}>
+              <BoxImg>
+                <Img src={show.img} alt="" />
+              </BoxImg>
             </div>
           ))}
-        </div>
+        </Container>
       )}
-      {selectedCategory === "music" && (
-        <div style={container}>
-          {songs.map((song) => (
-            <div
-              key={song.id}
-              caption={song.caption}
-              onClick={() => handleShowClick(song)}
-            >
-              <img style={imgStyle} src={song.img} alt="" />
+      {selectedCategory === "movies" && (
+        <Container>
+          {movies.map((movie) => (
+            <div key={movie.id} onClick={() => handleShowClick(movie)}>
+              <BoxImg>
+                <Img src={movie.img} alt="Filmes" />
+              </BoxImg>
             </div>
           ))}
-        </div>
+        </Container>
       )}
       {selectedCategory === "store" && (
-        <div style={container}>
-          {songs.map((song) => (
-            <div
-              key={song.id}
-              caption={song.caption}
-              onClick={() => handleShowClick(song)}
-            >
-              <img style={imgStyle} src={song.img} alt="" />
+        <Container>
+          {stores.map((store) => (
+            <div key={store.id} onClick={() => handleShowClick(store)}>
+              <BoxImg>
+                <Img src={store.img} alt="Compras" />
+              </BoxImg>
             </div>
           ))}
-        </div>
+        </Container>
+      )}
+      {selectedCategory === "music" && (
+        <Container>
+          {songs.map((song) => (
+            <div key={song.id} onClick={() => handleShowClick(song)}>
+              <BoxImg>
+                <Img src={song.img} alt="Musicas" />
+              </BoxImg>
+            </div>
+          ))}
+        </Container>
       )}
       {selectedCategory === "photos" && (
-        <div style={container}>
+        <Container>
           {songs.map((song) => (
-            <div
-              key={song.id}
-              caption={song.caption}
-              onClick={() => handleShowClick(song)}
-            >
-              <img style={imgStyle} src={song.img} alt="" />
+            <div key={song.id} onClick={() => handleShowClick(song)}>
+              <BoxImg>
+                <Img src={song.img} alt="Fotos" />
+              </BoxImg>
             </div>
           ))}
-        </div>
+        </Container>
       )}
-      {selectedCategory === "tv" && (
-        <div style={container}>
-          {songs.map((song) => (
-            <div
-              key={song.id}
-              caption={song.caption}
-              onClick={() => handleShowClick(song)}
-            >
-              <img style={imgStyle} src={song.img} alt="" />
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
+    </Screen>
   );
 }
 

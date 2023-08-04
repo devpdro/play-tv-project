@@ -228,7 +228,7 @@ export const apps5 = [
   },
 ];
 
-export const appStoassets = [
+export const stores = [
   {
     img: Instagram,
     caption: "Instagram",

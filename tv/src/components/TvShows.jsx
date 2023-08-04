@@ -1,8 +1,8 @@
 import React from "react";
 
 const ImgStyle = {
-  width: "250px",
-  height: "400px",
+  width: "287px",
+  height: "340px",
   objectFit: "cover",
 };
 

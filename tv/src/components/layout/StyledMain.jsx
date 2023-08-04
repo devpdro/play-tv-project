@@ -1,11 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  max-width: ${({ theme }) => theme.width.max};
+  padding: 0 2rem;
+  max-width: ${({ theme }) => theme.width.maxShow};
   margin: 0 auto;
   overflow-y: none;
   overflow-x: hidden;
   max-height: 450px;
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.text};
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0a0a0a;
+  }
 `;
 
 export const ScrollContainer = styled.div`
@@ -17,5 +28,5 @@ export const ImgSize = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
 `;
