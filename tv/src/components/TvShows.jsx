@@ -1,8 +1,6 @@
 import React from "react";
 
-const container = {};
-
-const imgStyle = {
+const ImgStyle = {
   width: "250px",
   height: "400px",
   objectFit: "cover",
@@ -10,9 +8,9 @@ const imgStyle = {
 
 function TvShows({ img, caption }) {
   return (
-    <section style={container}>
+    <section>
       <div>
-        <img src={img} alt={caption} style={imgStyle} />
+        <img src={img} alt={caption} style={ImgStyle} />
       </div>
     </section>
   );

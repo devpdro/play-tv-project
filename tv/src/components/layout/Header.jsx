@@ -1,18 +1,20 @@
 import React from "react";
-import { Screen, Container, Title } from "./StyledHeader";
+
+import { Screen, Container, BoxHeader } from "./StyledHeader";
 
 function Header() {
   return (
     <Screen>
       <Container>
-        <Title>
+        <BoxHeader>
           <h2>O app StreamVision TV</h2>
           <div>
             <h1>
-              Toda a sua Tv <span>no mesmo app.</span>
+              Toda a sua <em>TV </em>
+              <span>no mesmo app.</span>
             </h1>
           </div>
-        </Title>
+        </BoxHeader>
       </Container>
     </Screen>
   );

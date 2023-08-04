@@ -1,11 +1,15 @@
-import { Container, Screen } from "./StyledNavbar";
+import React from "react";
+
+import { Container } from "./StyledNavbar";
 
 function Navbar() {
   return (
     <Container>
-      <Screen>
-        <h1>StreamVision TV</h1>
-      </Screen>
+      <div>
+        <h1>
+          StreamVision <em>TV</em>
+        </h1>
+      </div>
     </Container>
   );
 }

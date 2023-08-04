@@ -1,41 +1,38 @@
 import styled from "styled-components";
 
 export const Screen = styled.header`
-  max-width: 1280px;
+  max-width: ${({ theme }) => theme.width.max};
   margin: 0 auto;
 `;
 
-export const Container = styled.header`
+export const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 9rem;
-  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Title = styled.div`
+export const BoxHeader = styled.div`
   h2 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
   }
   div {
     h1 {
       font-size: 4rem;
-      margin-top: 0;
-      padding-right: 4rem;
-      text-align: justify;
+      text-align: center;
       font-weight: 900;
+      em {
+        padding-right: 10px;
+        background-image: ${({ theme }) => theme.colors.gradient};
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
       span {
-        margin-top: -40px;
+        margin-top: -32px;
         display: block;
       }
     }
-  }
-`;
-
-export const Image = styled.div`
-  img {
-    border: 1px solid red;
-    width: 100%;
-    height: 50vh;
   }
 `;

@@ -2,16 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
   border-bottom: 1px solid #cacacd;
-  background-color: #f9f9fb;
-  max-width: none;
-`;
-
-export const Screen = styled.header`
-  max-width: 1280px;
-  margin: 0 auto;
-  h1 {
-    color: #1e1e1f;
-    padding-left: 8rem;
-    font-size: 1.4rem;
+  div {
+    max-width: ${({ theme }) => theme.width.max};
+    margin: 0 auto;
+    h1 {
+      color: ${({ theme }) => theme.colors.text};
+      padding-left: 7.8rem;
+      font-size: 1.5rem;
+      em {
+        padding-right: 10px;
+        background-image: ${({ theme }) => theme.colors.gradient};
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 `;
