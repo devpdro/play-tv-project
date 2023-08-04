@@ -8,8 +8,8 @@ export const Screen = styled.header`
 export const Container = styled.header`
   display: flex;
   justify-content: center;
-
   margin-top: 9rem;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Title = styled.div`
