@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-import { Screen, Container, Img, BoxImg } from "./StyledApps";
+import {
+  Screen,
+  Container,
+  Img,
+  BoxImg,
+  ScrollContainer,
+  ImgList,
+} from "./StyledApps";
 
 import PrimeVideo from "../assets/apps/prime video logo.png";
 import Movies from "../assets/apps/movies logo.jpg";
@@ -11,6 +18,8 @@ import Photos from "../assets/apps/photos logo.jpg";
 const ImgStyle = {
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
+  marginBottom: "3rem",
   width: "262px",
   height: "140px",
   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
@@ -33,35 +42,35 @@ function Apps({ shows, songs, movies, stores }) {
   return (
     <Screen>
       <Container>
-        <img
+        <Img
           onClick={() => handleCategoryClick("prime")}
           style={ImgStyle}
           src={PrimeVideo}
           caption={"Prime"}
           alt="Prime Video"
         />
-        <img
+        <Img
           onClick={() => handleCategoryClick("movies")}
           style={ImgStyle}
           src={Movies}
           caption={"Movies"}
           alt="Filmes"
         />
-        <img
+        <Img
           onClick={() => handleCategoryClick("store")}
           style={ImgStyle}
           src={Store}
           caption={"Store"}
           alt="Compras"
         />
-        <img
+        <Img
           onClick={() => handleCategoryClick("music")}
           style={ImgStyle}
           src={Music}
           caption={"Music"}
           alt="Musicas"
         />
-        <img
+        <Img
           onClick={() => handleCategoryClick("photos")}
           style={ImgStyle}
           src={Photos}
@@ -71,61 +80,63 @@ function Apps({ shows, songs, movies, stores }) {
 
         {selectedShow ? <div></div> : null}
       </Container>
-      {selectedCategory === "prime" && (
-        <Container>
-          {shows.map((show) => (
-            <div key={show.id} onClick={() => handleShowClick(show)}>
-              <BoxImg>
-                <Img src={show.img} alt="" />
-              </BoxImg>
-            </div>
-          ))}
-        </Container>
-      )}
-      {selectedCategory === "movies" && (
-        <Container>
-          {movies.map((movie) => (
-            <div key={movie.id} onClick={() => handleShowClick(movie)}>
-              <BoxImg>
-                <Img src={movie.img} alt="Filmes" />
-              </BoxImg>
-            </div>
-          ))}
-        </Container>
-      )}
-      {selectedCategory === "store" && (
-        <Container>
-          {stores.map((store) => (
-            <div key={store.id} onClick={() => handleShowClick(store)}>
-              <BoxImg>
-                <Img src={store.img} alt="Compras" />
-              </BoxImg>
-            </div>
-          ))}
-        </Container>
-      )}
-      {selectedCategory === "music" && (
-        <Container>
-          {songs.map((song) => (
-            <div key={song.id} onClick={() => handleShowClick(song)}>
-              <BoxImg>
-                <Img src={song.img} alt="Musicas" />
-              </BoxImg>
-            </div>
-          ))}
-        </Container>
-      )}
-      {selectedCategory === "photos" && (
-        <Container>
-          {songs.map((song) => (
-            <div key={song.id} onClick={() => handleShowClick(song)}>
-              <BoxImg>
-                <Img src={song.img} alt="Fotos" />
-              </BoxImg>
-            </div>
-          ))}
-        </Container>
-      )}
+      <ScrollContainer>
+        {selectedCategory === "prime" && (
+          <Container>
+            {shows.map((show) => (
+              <div key={show.id} onClick={() => handleShowClick(show)}>
+                <BoxImg>
+                  <ImgList src={show.img} alt="" />
+                </BoxImg>
+              </div>
+            ))}
+          </Container>
+        )}
+        {selectedCategory === "movies" && (
+          <Container>
+            {movies.map((movie) => (
+              <div key={movie.id} onClick={() => handleShowClick(movie)}>
+                <BoxImg>
+                  <ImgList src={movie.img} alt="Filmes" />
+                </BoxImg>
+              </div>
+            ))}
+          </Container>
+        )}
+        {selectedCategory === "store" && (
+          <Container>
+            {stores.map((store) => (
+              <div key={store.id} onClick={() => handleShowClick(store)}>
+                <BoxImg>
+                  <ImgList src={store.img} alt="Compras" />
+                </BoxImg>
+              </div>
+            ))}
+          </Container>
+        )}
+        {selectedCategory === "music" && (
+          <Container>
+            {songs.map((song) => (
+              <div key={song.id} onClick={() => handleShowClick(song)}>
+                <BoxImg>
+                  <ImgList src={song.img} alt="Musicas" />
+                </BoxImg>
+              </div>
+            ))}
+          </Container>
+        )}
+        {selectedCategory === "photos" && (
+          <Container>
+            {songs.map((song) => (
+              <div key={song.id} onClick={() => handleShowClick(song)}>
+                <BoxImg>
+                  <ImgList src={song.img} alt="Fotos" />
+                </BoxImg>
+              </div>
+            ))}
+          </Container>
+        )}
+      </ScrollContainer>
     </Screen>
   );
 }

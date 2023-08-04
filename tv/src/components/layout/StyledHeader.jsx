@@ -5,11 +5,30 @@ export const Screen = styled.header`
   margin: 0 auto;
 `;
 
+export const Highlights = styled.h1`
+  padding-left: 3rem;
+  span {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(
+        135deg,
+        #d30c1e,
+        #e80b56,
+        #f40a76,
+        #fd0a90,
+        #ff1b7b,
+        #ff325a,
+        #ff5427
+      )
+      1;
+  }
+`;
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.4rem;
 `;
 
 export const BoxHeader = styled.div`

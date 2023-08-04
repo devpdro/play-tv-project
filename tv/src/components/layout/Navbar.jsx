@@ -7,7 +7,7 @@ function Navbar() {
     <Container>
       <div>
         <h1>
-          StreamVision <em>TV</em>
+          Play <em>TV</em>
         </h1>
       </div>
     </Container>

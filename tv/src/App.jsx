@@ -4,6 +4,9 @@ import Apps from "./components/Apps";
 import Header from "./components/layout/Header";
 import Main from "./components/layout/Main";
 import Navbar from "./components/layout/Navbar";
+import Apps2 from "./components/layout/OtherApps/Apps2";
+import Apps3 from "./components/layout/OtherApps/Apps3";
+import Apps1 from "./components/layout/OtherApps/Apps1";
 
 import { apps1, songs, movies, stores } from "./data/db";
 
@@ -24,6 +27,9 @@ function App() {
         movies={selectedMovies}
         stores={selectedStores}
       />
+      <Apps1 />
+      <Apps2 />
+      <Apps3 />
     </main>
   );
 }

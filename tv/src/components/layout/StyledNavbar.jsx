@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
+  background-color: ${({ theme }) => theme.colors.gradientBackground};
   border-bottom: 1px solid #cacacd;
   div {
-    max-width: ${({ theme }) => theme.width.max};
+    max-width: ${({ theme }) => theme.width.maxNav};
     margin: 0 auto;
     h1 {
       color: ${({ theme }) => theme.colors.text};
-      padding-left: 7.8rem;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 900;
       em {
         padding-right: 10px;
         background-image: ${({ theme }) => theme.colors.gradient};
