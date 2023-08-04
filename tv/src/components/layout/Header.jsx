@@ -1,7 +1,7 @@
 import React from "react";
-import { Screen, Container, Title, Image } from "./StyledHeader";
+import { Screen, Container, Title } from "./StyledHeader";
 
-function Header({ img, caption, type }) {
+function Header() {
   return (
     <Screen>
       <Container>
@@ -9,13 +9,10 @@ function Header({ img, caption, type }) {
           <h2>O app StreamVision TV</h2>
           <div>
             <h1>
-              Toda a sua {type} <span>no mesmo app.</span>
+              Toda a sua Tv <span>no mesmo app.</span>
             </h1>
           </div>
         </Title>
-        <Image>
-          <img src={img} alt={caption} />
-        </Image>
       </Container>
     </Screen>
   );

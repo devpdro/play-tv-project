@@ -81,7 +81,7 @@ import Yi from "../assets/music/yuri-ice.jpg";
 import MusicLogo from "../assets/apps/music logo.png";
 import TvLogo from "../assets/apps/tv logo.jpg";
 import MoviesLogo from "../assets/apps/movies logo.jpg";
-import AppStoreLogo from "../assets/apps/app store logo.png";
+import AppStoreLogo from "../assets/apps/app-store-logo.png";
 import PhotosLogo from "../assets/apps/photos logo.jpg";
 
 import HuluLogo from "../assets/apps/hulu logo.jpg";
@@ -401,9 +401,9 @@ export const tvShows = [
     link: "https://youtu.be/bKsij5MogIA",
   },
   {
-    img: Hsod,
-    caption: "Highschool of the Dead",
-    link: "https://youtu.be/j_OEW_rJTJU",
+    img: Stranger,
+    caption: "Stranger Things",
+    link: "https://youtu.be/mnd7sFt5c3A",
   },
   {
     img: Hxh,
@@ -456,9 +456,9 @@ export const tvShows = [
     link: "https://youtu.be/3c7q1EmjnAk",
   },
   {
-    img: Stranger,
-    caption: "Stranger Things",
-    link: "https://youtu.be/mnd7sFt5c3A",
+    img: Hsod,
+    caption: "Highschool of the Dead",
+    link: "https://youtu.be/j_OEW_rJTJU",
   },
   {
     img: Watership,

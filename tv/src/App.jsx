@@ -1,23 +1,23 @@
 import "./App.css";
+import Apps from "./components/Apps";
 
 import Header from "./components/layout/Header";
 import Main from "./components/layout/Main";
 import Navbar from "./components/layout/Navbar";
 
-import { apps1 } from "./data/db";
+import { apps1, songs } from "./data/db";
 
 function App() {
-  const selectedApp = apps1[0];
+  const selectedApp = apps1.slice(0, 5);
+
+  const selectedSongs = songs.slice(0, 5);
 
   return (
     <div className="App">
       <Navbar />
-      <Header
-        img={selectedApp.img}
-        caption={selectedApp.caption}
-        type={selectedApp.type}
-      />
+      <Header />
       <Main />
+      <Apps shows={selectedApp} songs={selectedSongs} />
     </div>
   );
 }
