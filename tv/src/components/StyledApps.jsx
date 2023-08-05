@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Screen = styled.section`
-  max-width: ${({ theme }) => theme.width.maxShow};
-  margin: 5rem auto;
+  max-width: ${({ theme }) => theme.width.maxApp};
+  margin: 0rem auto;
 `;
 
 export const Container = styled.div`
@@ -16,7 +16,6 @@ export const Container = styled.div`
 export const ScrollContainer = styled.div`
   display: flex;
   overflow-x: scroll;
-  margin: 0 2rem;
 `;
 
 export const BoxImg = styled.div`

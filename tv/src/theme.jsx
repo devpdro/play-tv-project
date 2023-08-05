@@ -10,6 +10,6 @@ export const theme = {
   width: {
     maxNav: "1180px",
     maxShow: "1580px",
-    maxApp: "1280px",
+    maxApp: "1307px",
   },
 };

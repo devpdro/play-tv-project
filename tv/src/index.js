@@ -7,10 +7,10 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Books from "./pages/Books";
-import Teste from "./pages/Teste";
+
+import Login from "./pages/Login";
+import Loading from "./pages/Loading";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,8 +19,8 @@ root.render(
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/Books" element={<Books />} />
-          <Route path="/Teste" element={<Teste />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Loading" element={<Loading />} />
         </Routes>
       </Router>
     </ThemeProvider>

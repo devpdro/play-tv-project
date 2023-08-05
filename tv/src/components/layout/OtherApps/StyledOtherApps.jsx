@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Screen = styled.section`
-  max-width: ${({ theme }) => theme.width.maxApp};
+  max-width: ${({ theme }) => theme.width.maxShow};
   margin: 5rem auto;
 `;
 

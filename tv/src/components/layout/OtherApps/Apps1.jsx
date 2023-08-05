@@ -23,7 +23,7 @@ function Apps1() {
   return (
     <Screen>
       <Container>
-        <Link to="/teste">
+        <Link to="/loading">
           <Img style={ImgStyle} src={ABC} alt="ABC" />
         </Link>
         <Img style={ImgStyle} src={AMC} alt="AMC" />
