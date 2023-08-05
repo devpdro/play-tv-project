@@ -7,11 +7,22 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Books from "./pages/Books";
+import Teste from "./pages/Teste";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/Books" element={<Books />} />
+          <Route path="/Teste" element={<Teste />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   </React.StrictMode>
 );

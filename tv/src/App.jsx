@@ -27,7 +27,7 @@ function App() {
         movies={selectedMovies}
         stores={selectedStores}
       />
-      <Apps1 />
+      <Apps1 path="/Teste"/>
       <Apps2 />
       <Apps3 />
     </main>

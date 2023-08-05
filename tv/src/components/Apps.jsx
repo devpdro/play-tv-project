@@ -78,7 +78,7 @@ function Apps({ shows, songs, movies, stores }) {
           alt="Fotos"
         />
 
-        {selectedShow ? <div></div> : null}
+        {selectedShow ? '' : null}
       </Container>
       <ScrollContainer>
         {selectedCategory === "prime" && (

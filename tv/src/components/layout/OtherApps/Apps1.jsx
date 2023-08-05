@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom"; 
 import { Screen, Container, Img } from "./StyledOtherApps";
 
 import ABC from "../../../assets/apps/abc logo.jpg";
@@ -23,7 +23,9 @@ function Apps1() {
   return (
     <Screen>
       <Container>
-        <Img style={ImgStyle} src={ABC} alt="ABC" />
+        <Link to="/teste">
+          <Img style={ImgStyle} src={ABC} alt="ABC" />
+        </Link>
         <Img style={ImgStyle} src={AMC} alt="AMC" />
         <Img style={ImgStyle} src={Aquarium} alt="Aquarium" />
         <Img style={ImgStyle} src={Audio} alt="Audio" />
