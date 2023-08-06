@@ -6,6 +6,8 @@ import { LoadingSpinner } from "./StyledLoading";
 
 import apps4 from "../data/db";
 
+import { Helmet } from "react-helmet";
+
 function Loading() {
   const [isLoading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -22,6 +24,9 @@ function Loading() {
 
   return (
     <div>
+      <Helmet>
+        <title>Loading</title>
+      </Helmet>
       {isLoading ? (
         <LoadingSpinner>
           {filtering.map((app, id) => (

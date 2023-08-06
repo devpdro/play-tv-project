@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 import { users } from "../data/db";
 
+import { Helmet } from "react-helmet";
+
 function Login() {
   const navigate = useNavigate();
   const [showLoginButton, setShowLoginButton] = useState(false);
@@ -28,6 +30,9 @@ function Login() {
 
   return (
     <Container>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div>
         <FaArrowLeft className="icon" onClick={handleGoBack} />
         <h1>Quem está assistindo?</h1>
