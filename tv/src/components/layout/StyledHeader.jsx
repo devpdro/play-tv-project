@@ -32,10 +32,6 @@ export const Container = styled.div`
 `;
 
 export const BoxHeader = styled.div`
-  h2 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
   div {
     h1 {
       font-size: 4rem;

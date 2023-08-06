@@ -2,6 +2,8 @@ import React from "react";
 
 import { BoxImg } from "./StyledTvShows";
 
+import { Link } from "react-router-dom";
+
 const ImgStyle = {
   width: "290px",
   height: "350px",
@@ -10,11 +12,13 @@ const ImgStyle = {
   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
 };
 
-function TvShows({ img, caption }) {
+function TvShows({ img, caption, link }) {
   return (
     <section>
       <BoxImg>
-        <img src={img} alt={caption} style={ImgStyle} />
+        <Link to={link} target="_blank">
+          <img src={img} alt={caption} style={ImgStyle} />
+        </Link>
       </BoxImg>
     </section>
   );

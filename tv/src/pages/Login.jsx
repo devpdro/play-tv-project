@@ -23,7 +23,7 @@ function Login() {
     setTimeout(() => {
       setIsLoading(false);
       setShowLoginButton(true);
-    }, 1000);
+    }, 350);
   };
 
   return (

@@ -19,6 +19,7 @@ function Main() {
               img={show.img}
               caption={show.caption}
               type={show.type}
+              link={show.link}
             />
           ))}
         </ImgSize>

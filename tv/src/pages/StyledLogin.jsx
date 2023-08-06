@@ -14,6 +14,20 @@ export const Container = styled.main`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.text};
+  @media (max-width: 800px) {
+    height: 100%;
+    .icon {
+      margin-top: 0.2rem;
+      font-size: 1.5rem !important;
+    }
+    h1 {
+      margin-top: 1.9rem;
+      font-size: 1.6rem !important;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1380px) {
+    height: 105vh;
+  }
   .icon {
     position: absolute;
     top: 35px;
@@ -32,6 +46,7 @@ export const Container = styled.main`
     font-size: 2.2rem;
   }
   .box_login {
+    padding: 0rem 1rem;
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -64,6 +79,7 @@ export const Container = styled.main`
       border-radius: 3px;
       font-size: 1.2rem;
       border: none;
+      margin-bottom: 3rem;
       outline: none;
       font-family: "Poppins", sans-serif;
       cursor: pointer;

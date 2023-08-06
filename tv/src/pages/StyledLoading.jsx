@@ -10,13 +10,14 @@ export const spin = keyframes`
 `;
 
 export const LoadingSpinner = styled.div`
+  background-color: black;
   position: relative;
   .box_title {
     position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 640%);
+    transform: translate(-50%, 350%);
     color: white;
   }
   .spinner {

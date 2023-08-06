@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Screen = styled.section`
   max-width: ${({ theme }) => theme.width.maxApp};
-  margin: 0rem auto;
+  margin: 3rem auto;
 `;
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 1.2rem 0.9rem;
 `;
@@ -35,8 +36,9 @@ export const Img = styled.img`
 `;
 
 export const ImgList = styled.img`
-  width: 300px;
-  height: 270px;
+  width: 280px;
+  object-fit: cover;
+  height: 340px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;

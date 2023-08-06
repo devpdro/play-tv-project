@@ -1,11 +1,9 @@
-// aplicativos
 import Instagram from "../assets/app-store/instagram.png";
 import DailyBurn from "../assets/app-store/dailyburn.png";
 import GrubHub from "../assets/app-store/grubhub.jpg";
 import Spectrum from "../assets/app-store/spectrum.png";
 import Vudu from "../assets/app-store/vudu.jpg";
 
-// filmess
 import Avengers from "../assets/movies/avengers.jpg";
 import Chronicle from "../assets/movies/chronicle.jpg";
 import DivineMove from "../assets/movies/divine move.jpg";
@@ -27,7 +25,6 @@ import Void from "../assets/movies/void.jpg";
 import Wailing from "../assets/movies/wailing.jpg";
 import Whiplash from "../assets/movies/whiplash.jpg";
 
-// tv
 import Ajin from "../assets/tv-shows/ajin.jpg";
 import AmerVan from "../assets/tv-shows/american vandal.jpg";
 import AttackTitan from "../assets/tv-shows/attack on titan.jpg";
@@ -51,16 +48,13 @@ import Roanoke from "../assets/tv-shows/roanoke.jpg";
 import Stranger from "../assets/tv-shows/stranger.jpg";
 import Watership from "../assets/tv-shows/watership.jpg";
 
-// usuarios
 import Av1 from "../assets/avatars/avi-1.png";
 import Av2 from "../assets/avatars/avi-2.jpg";
 import Av3 from "../assets/avatars/avi-3.jpg";
 import Av4 from "../assets/avatars/avi-4.jpg";
 import Av5 from "../assets/avatars/avi-5.png";
 import Av6 from "../assets/avatars/avi-6.png";
-import Av7 from "../assets/avatars/avi-7.jpg";
 
-// musicasss
 import Cg from "../assets/music/code-geass.jpeg";
 import Cg2 from "../assets/music/code-geass2.jpg";
 import Fmab from "../assets/music/fmab.jpg";
@@ -77,156 +71,16 @@ import Sh2 from "../assets/music/shield-hero2.jpg";
 import Tbh from "../assets/music/tbhero.jpg";
 import Yi from "../assets/music/yuri-ice.jpg";
 
-// aplicativos
-import MusicLogo from "../assets/apps/music logo.png";
-import TvLogo from "../assets/apps/tv logo.jpg";
-import MoviesLogo from "../assets/apps/movies logo.jpg";
-import AppStoreLogo from "../assets/apps/app-store-logo.png";
-import PhotosLogo from "../assets/apps/photos logo.jpg";
+import BlackImage from "../assets/apps/black-image.jpg";
 
-import HuluLogo from "../assets/apps/hulu logo.jpg";
-import FxLogo from "../assets/apps/fx logo.jpeg";
-import HboGoLogo from "../assets/apps/hbo now logo.jpg";
-import NbaLogo from "../assets/apps/nba logo.jpg";
-import NbcLogo from "../assets/apps/nbc logo.jpg";
-
-import PrimeLogo from "../assets/apps/prime video logo.png";
-import VrvLogo from "../assets/apps/vrv logo.png";
-import YtubeLogo from "../assets/apps/youtube logo.png";
-import ShowLogo from "../assets/apps/showtime logo.jpg";
-import TedLogo from "../assets/apps/ted logo.png";
-
-import SettingsLogo from "../assets/apps/settings logo.png";
-import FireplaceLogo from "../assets/apps/fireplace logo.jpg";
-import AbcLogo from "../assets/apps/abc logo.jpg";
-import EspnLogo from "../assets/apps/espn logo.jpg";
-import AmcLogo from "../assets/apps/amc logo.jpg";
-
-import PodcastLogo from "../assets/apps/podcast logo.jpg";
-import AquariumLogo from "../assets/apps/aquarium logo.jpg";
-import NetflixLogo from "../assets/apps/netflix logo.png";
-import AudioBookLogo from "../assets/apps/audiobooks logo.jpg";
-
-// linha 1
-export const apps1 = [
+const apps4 = [
   {
-    img: TvLogo,
-    caption: "TV",
-    type: "tv",
-  },
-  {
-    img: MoviesLogo,
-    caption: "Movies",
-    type: "movie",
-  },
-  {
-    img: AppStoreLogo,
-    caption: "Apps",
-    type: "app",
-  },
-  {
-    img: MusicLogo,
-    caption: "Music",
-    type: "music",
-  },
-  {
-    img: PhotosLogo,
-    caption: "Photos",
-    type: "photo",
+    img: BlackImage,
+    caption: "BLACK",
   },
 ];
 
-// linha 2
-export const apps2 = [
-  {
-    img: HuluLogo,
-    caption: "Hulu",
-  },
-  {
-    img: FxLogo,
-    caption: "FX",
-  },
-  {
-    img: HboGoLogo,
-    caption: "HBO GO",
-  },
-  {
-    img: NbaLogo,
-    caption: "NBA",
-  },
-  {
-    img: NbcLogo,
-    caption: "NBC",
-  },
-];
-
-// linha 3
-export const apps3 = [
-  {
-    img: PrimeLogo,
-    caption: "Prime",
-  },
-  {
-    img: VrvLogo,
-    caption: "VRV",
-  },
-  {
-    img: YtubeLogo,
-    caption: "YouTube",
-  },
-  {
-    img: ShowLogo,
-    caption: "Showtime",
-  },
-  {
-    img: TedLogo,
-    caption: "TED",
-  },
-];
-
-// linha 4
-export const apps4 = [
-  {
-    img: SettingsLogo,
-    caption: "Settings",
-  },
-  {
-    img: FireplaceLogo,
-    caption: "Fireplace",
-  },
-  {
-    img: AbcLogo,
-    caption: "ABC",
-  },
-  {
-    img: EspnLogo,
-    caption: "ESPN",
-  },
-  {
-    img: AmcLogo,
-    caption: "AMC",
-  },
-];
-
-// linha 5
-export const apps5 = [
-  {
-    img: PodcastLogo,
-    caption: "Podcasts",
-  },
-  {
-    img: AquariumLogo,
-    caption: "Aquarium",
-  },
-  {
-    img: NetflixLogo,
-    caption: "Netflix",
-  },
-  {
-    img: AudioBookLogo,
-    caption: "Audiobooks",
-  },
-];
+export default apps4;
 
 export const stores = [
   {
@@ -491,10 +345,6 @@ export const users = [
   {
     img: Av6,
     caption: "Zolo",
-  },
-  {
-    img: Av7,
-    caption: "Kaitou",
   },
 ];
 

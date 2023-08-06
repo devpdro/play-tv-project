@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Screen = styled.section`
   max-width: ${({ theme }) => theme.width.maxShow};
-  margin: 5rem auto;
 `;
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 `;
 

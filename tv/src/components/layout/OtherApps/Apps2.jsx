@@ -8,12 +8,14 @@ import Hbo from "../../../assets/apps/hbo go logo.jpg";
 import Hulu from "../../../assets/apps/hulu logo.jpg";
 import Nba from "../../../assets/apps/nba logo.jpg";
 
+import { Link } from "react-router-dom";
+
 const ImgStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   width: "240px",
-  margin: "0 10px 0 10px",
+  margin: "0 10px 5rem 10px",
   height: "140px",
   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
   cursor: "pointer",
@@ -23,11 +25,21 @@ function Apps2() {
   return (
     <Screen>
       <Container>
-        <Img style={ImgStyle} src={Fx} alt="Fx" />
-        <Img style={ImgStyle} src={Hbo} alt="Hbo" />
-        <Img style={ImgStyle} src={Espn} alt="Fotos" />
-        <Img style={ImgStyle} src={Hulu} alt="Hulu" />
-        <Img style={ImgStyle} src={Nba} alt="Nba" />
+        <Link to="/loading">
+          <Img style={ImgStyle} src={Fx} alt="Fx" />
+        </Link>
+        <Link to="/loading">
+          <Img style={ImgStyle} src={Hbo} alt="Hbo" />
+        </Link>
+        <Link to="/loading">
+          <Img style={ImgStyle} src={Espn} alt="Fotos" />
+        </Link>
+        <Link to="/loading">
+          <Img style={ImgStyle} src={Hulu} alt="Hulu" />
+        </Link>
+        <Link to="/loading">
+          <Img style={ImgStyle} src={Nba} alt="Nba" />
+        </Link>
       </Container>
     </Screen>
   );
