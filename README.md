@@ -1,7 +1,7 @@
 # Play TV 📺
 
 ![Alt text](src/assets/readme/post1.png)
-You can access it with this [link.]()
+You can access it with this [link.](https://play-tv-project.vercel.app/)
 
 # 💻 About the project
 
