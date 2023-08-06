@@ -1,7 +1,7 @@
 # Play TV 📺
 
 ![Alt text](src/assets/readme/post1.png)
-You can access it with this [link.](https://ecommerce-project-livid-chi.vercel.app/)
+You can access it with this [link.]()
 
 # 💻 About the project
 
