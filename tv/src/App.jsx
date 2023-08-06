@@ -10,13 +10,18 @@ import Apps1 from "./components/layout/OtherApps/Apps1";
 
 import { songs, movies, stores } from "./data/db";
 
+import { Helmet } from "react-helmet";
+
 function App() {
   const selectedSongs = songs.slice(0, 15);
   const selectedMovies = movies.slice(0, 20);
   const selectedStores = stores.slice(0, 20);
 
   return (
-    <main>
+    <>
+      <Helmet>
+        <title>Play TV</title>
+      </Helmet>
       <Navbar />
       <Header />
       <Main />
@@ -28,7 +33,7 @@ function App() {
       <Apps1 />
       <Apps2 />
       <Apps3 />
-    </main>
+    </>
   );
 }
 

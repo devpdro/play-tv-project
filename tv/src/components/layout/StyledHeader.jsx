@@ -49,5 +49,10 @@ export const BoxHeader = styled.div`
         display: block;
       }
     }
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 3.1rem !important;
+      }
+    }
   }
 `;

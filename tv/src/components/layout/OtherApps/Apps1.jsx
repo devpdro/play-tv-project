@@ -6,7 +6,8 @@ import Amc from "../../../assets/apps/amc logo.jpg";
 import Ted from "../../../assets/apps/ted logo.png";
 import Showtime from "../../../assets/apps/showtime logo.jpg";
 import Audio from "../../../assets/apps/audiobooks logo.jpg";
-import Fireplace from "../../../assets/apps/fireplace logo.jpg";
+import PrimeVideo from "../../../assets/apps/prime video logo.png"
+
 
 const ImgStyle = {
   display: "flex",
@@ -36,7 +37,7 @@ function Apps1() {
           <Img style={ImgStyle} src={Audio} alt="Audio" />
         </Link>
         <Link to="/loading">
-          <Img style={ImgStyle} src={Fireplace} alt="Fireplace" />
+          <Img style={ImgStyle} src={PrimeVideo} alt="PrimeVideo" />
         </Link>
       </Container>
     </Screen>

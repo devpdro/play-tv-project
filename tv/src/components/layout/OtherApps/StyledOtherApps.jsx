@@ -13,7 +13,6 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   transition: transform 0.3s ease-in-out;
-  object-fit: cover;
   &:hover {
     transform: scale(1.1);
     opacity: 1;
